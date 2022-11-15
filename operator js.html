@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERATOR JS</title>
+</head>
+
+<body>
+    <!---ini halaman js-->
+
+    <script>
+        //Belajar operator pada javascript
+
+        /*OPERATOR aritmatika*/
+
+        var a = 10;
+        var b = 5;
+
+        // perkalian op aritmatika
+        c = a * b;
+        document.write(`${a} * ${b} =${c}<br>`);
+        //pengurangan op aritmatika
+        c = a - b;
+        document.write(`${b} - ${a} =${c}<br>`);
+        //penjumlahan pada op aritmatika
+        c = a + b;
+        document.write(`${a} + ${b} =${c}<br>`);
+        //pembagian pada op aritmaatika
+        c = a / b
+        document.write(`${b} / ${a} =${c}<br>`);
+        //sisabagi pada op aritmatika
+        c = a % b;
+        document.write(`${a} % ${b} =${c}<br> <hr>`);
+        //pepangkatan pada op aritmatika
+
+        //OPERATOR PENUGASAAN pada js
+
+        // var x = 10;
+        // x++;
+
+        //pengisian nilai  pada op penugasan js 
+        document.write("mula - mula score adalah.. <br>")
+        var score = 100;
+        document.write("score = " + score + "<br/>")
+
+        //pengisian dan penjumlahan 5 
+        score += 5;
+        document.write("score = " + score + "<br/>")
+
+        //pengisian dan pengurangan 2
+        score -= 2;
+        document.write("score =" + score + "<br/>")
+
+        //pengisian dan perkalian 3
+        score *= 3;
+        document.write("score" + score + "<br/> <hr>")
+
+        //OPERATOR PERBANDINGAN
+
+        //akan menghasilkan booelan
+        var a = 10;
+        var b = 5;
+
+        // sama dengan
+        c = a == b;
+        document.write(`${a} == ${b} =${c}<br>`);
+        //lebih kecil sama dengan
+        c = a <= b;
+        document.write(`${b} <= ${a} =${c}<br>`);
+        //lebih besar sama dengan
+        c = a >= b;
+        document.write(`${a} >= ${b} =${c}<br>`);
+        // strict tidak sama dengan atau bisa mengetahui tipe datanya
+        c = a === b
+        document.write(`${b} === ${a} =${c}<br>`);
+        //tidak sama dengan
+        c = a != b;
+        document.write(`${a} != ${b} =${c}<br> <hr>`);
+
+        //OPERATOR LOGIKA 
+        var a = 10;
+        var b = 5;
+
+        var benar = a < b;
+        var salah = b > a;
+
+
+        // logika dengan &&
+        c = a && b;
+        document.write(`${a} && ${b} =${c}<br>`);
+        //lebih kecil sama dengan
+        c = a || b;
+        document.write(`${b} || ${a} =${c}<br>`);
+        //lebih besar sama dengan
+        c = a != b;
+        document.write(`!${a} = ${b} <br> <hr>`);
+
+        //OPERATOR BITWISE
+
+        var x = 4;
+        var y = 3;
+
+        // operator bitwise and
+        var hasil = x & y;
+        document.write(`${x} & ${y} = ${hasil}<br/>`);
+
+        // operator bitwise or
+        var hasil = x | y;
+        document.write(`${x} | ${y} = ${hasil}<br/>`);
+
+        // operator bitwise xor
+        var hasil = x ^ y;
+        document.write(`${x} ^ ${y} = ${hasil}<br/>`);
+
+        // operator negasi
+        var hasil = ~x;
+        document.write(`~${x} = ${hasil}<br/>`);
+
+        // operator bitwise right shift >>
+        var hasil = x >> y;
+        document.write(`${x} >> ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift <<
+        var hasil = x << y;
+        document.write(`${x} << ${y} = ${hasil}<br/>`);
+
+        // operator bitwise right shift (unsigned) >>>
+        var hasil = x >>> y;
+        document.write(`${x} >>> ${y} = ${hasil}<br/> <hr>`);
+
+
+        //OPERATOR TENARY
+
+        var pertanyaan = confirm("Apakah kamu berumur diatas 18 tahun?")
+
+        var hasil = pertanyaan ? "Selamat datang" : "Kamu tidak boleh di sini";
+        document.write(hasil);
+    </script>
+
+
+</body>
+
+
+</html>
